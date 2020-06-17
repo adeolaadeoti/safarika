@@ -1,0 +1,54 @@
+.places {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    // padding-top: 4rem;
+    &__text {
+        margin-right: 14rem;
+
+    }
+
+    &__destination {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+
+        img {
+            border-radius: 2rem;
+        }
+
+        &:not(:last-child) {
+            margin-right: 14rem;
+        }
+
+        &--left {
+
+        }
+
+        &--right {
+            margin-left: 2rem;
+            article {
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+
+                img {
+                    height: 7rem;
+                    border-radius: 0;
+                }
+                
+                aside {
+                    margin-left: 2rem;
+                     p {
+                         font-size: 1.3rem;
+                         color: $tertiary-color;                        
+                         width: 25rem;
+                         white-space: normal;
+                         line-height: 2rem;
+                     }
+                }
+            }
+        }
+    }
+}

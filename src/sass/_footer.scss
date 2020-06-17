@@ -1,0 +1,13 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    &__progress {
+        width: 100vw;
+    }
+    
+    &__pattern {
+        width: 100vw;
+    }
+}

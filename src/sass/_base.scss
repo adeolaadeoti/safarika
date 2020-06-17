@@ -1,0 +1,177 @@
+/*--------------------------
+    variables
+---------------------------*/
+
+// font face //
+
+@font-face {
+    font-family: 'Circular Bold';
+    src: url('../font/Circular-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Book';
+    src: url('../font/Circular-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Medium';
+    src: url('../font/Circular-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'jelani';
+    src: url('../font/jelani.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$primary-font: 'Circular Book', sans-serif;
+$secondary-font: 'Circular Medium', sans-serif;
+$tertiary-font: 'Circular Bold', sans-serif;
+$jelani: 'jelani', sans-serif;
+
+
+// colors //
+$primary-color: #ffffff;
+$secondary-color: #E7AB54;
+$tertiary-color: #8B8B8B;
+
+
+
+
+
+/*--------------------------
+    base settings
+---------------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%; // 10px
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $primary-font;
+    background-color: #000000;
+    color: $primary-color;
+}
+
+.block{
+    min-width: 140rem;
+    height: 80vh;
+    padding: 2rem 0rem;
+    margin-top: -2rem;
+    // margin-top: 3rem;
+
+    &:not(:last-child) {
+        margin-right: 8rem;
+    }
+
+    &:last-child {
+        width: 40rem;
+    }
+}
+
+
+
+/*--------------------------
+    typography
+---------------------------*/
+.paragraph {
+    font-size: 1.3rem;
+    color: $tertiary-color;
+}
+
+.heading-1 {
+    font-size: 6rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    line-height: 6rem;
+    letter-spacing: -2px;
+    font-family: $secondary-font;
+
+    span {
+        color: $tertiary-color;
+    }
+
+}
+
+.heading-2 {
+    text-transform: uppercase;
+    color: $tertiary-color;
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.heading-3 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.heading-4 {
+    margin-bottom: .5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $tertiary-color;
+}
+
+
+
+
+
+/*--------------------------
+    button / cta
+---------------------------*/
+.cta {
+    margin-top: 3rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    background-image: url('../img/svg/btn-rect.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-transform: uppercase;
+    padding: 1.5rem 3.5rem;
+    font-size: 1rem;
+    font-family: $secondary-font;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+
+    &:hover {
+        background-position-x: 20rem;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}

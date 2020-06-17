@@ -1,0 +1,37 @@
+.header {
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 800;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .list {
+            display: flex;
+            min-width: 35rem;
+            justify-content: space-between;
+            list-style: none;
+
+            // &__item {
+
+            // }
+
+            &__link {
+                text-decoration: none;
+                color: $tertiary-color;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                letter-spacing: 6px;
+                transition: color .2s ease;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

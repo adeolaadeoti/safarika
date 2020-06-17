@@ -1,0 +1,17 @@
+.end {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+
+    h1 {
+        text-transform: lowercase;
+    }
+
+    h4 {
+        margin-top: 5rem;
+        text-transform: uppercase;
+        color: $secondary-color;
+        letter-spacing: 5px;
+        line-height: 2rem;
+    }
+}
